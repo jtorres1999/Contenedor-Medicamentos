@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Interfaces1;
 
 
@@ -59,6 +55,7 @@ public static  DefaultTableModel d=new DefaultTableModel();
         d.addColumn("Tipo");
         d.addColumn("Laboratorio");
         d.addColumn("Estado");
+        d.addColumn("Cantidad");
         tabla.setModel(d);
         jScrollPane1.setViewportView(tabla);
 
@@ -133,13 +130,14 @@ public static  DefaultTableModel d=new DefaultTableModel();
        
              if (filaSeleccionada >= 0) {   //SI EXISTE UNA FILA SELECCIONADA REALIZARA EL TRASPASO
 
-            String Vector[] = new String[4];   //CREAR UN VECTOR
+            String Vector[] = new String[5];   //CREAR UN VECTOR
             //LE ASIGNAMOS AL VECTOR Y CAPTURAMOS LOS DATOS DE LA TABLA1 EN LA FILA SELECCIONADA EN LA POSICION 0 Y 1,
             //ES DECIR COLUMNA NOMBRES Y APELLIDOS
             Vector[0] = tabla.getValueAt(filaSeleccionada, 0).toString();
             Vector[1] = tabla.getValueAt(filaSeleccionada, 1).toString();
             Vector[2] = tabla.getValueAt(filaSeleccionada, 2).toString();
             Vector[3] = tabla.getValueAt(filaSeleccionada, 3).toString();
+            Vector[4] = tabla.getValueAt(filaSeleccionada, 4).toString();
                  if (Vector[1].equals("Jarabe")) {
                     if (Vector[3].equals("Activo")) {
                          Jarabes.jara.addRow(Vector);

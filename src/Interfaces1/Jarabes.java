@@ -48,6 +48,7 @@ public class Jarabes extends javax.swing.JFrame {
         jara.addColumn("Tipo");
         jara.addColumn("Laboratorio");
         jara.addColumn("Estado");
+        jara.addColumn("Cantidad");
         jarab.setModel(jara);
         jScrollPane1.setViewportView(jarab);
 
@@ -109,7 +110,7 @@ public class Jarabes extends javax.swing.JFrame {
 
           for (int i = 0; i < jarab.getRowCount(); i++) {
             
-            String Vector[]=new String[4];
+            String Vector[]=new String[5];
             
             Vector[0] = jarab.getValueAt(i, 0).toString();
           Vector[1] = jarab.getValueAt(i, 1).toString();

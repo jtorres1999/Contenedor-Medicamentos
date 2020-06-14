@@ -103,7 +103,7 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="d.addColumn(&quot;Nombre&quot;);&#xa;d.addColumn(&quot;Tipo&quot;);&#xa;d.addColumn(&quot;Laboratorio&quot;);&#xa;d.addColumn(&quot;Estado&quot;);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="d.addColumn(&quot;Nombre&quot;);&#xa;d.addColumn(&quot;Tipo&quot;);&#xa;d.addColumn(&quot;Laboratorio&quot;);&#xa;d.addColumn(&quot;Estado&quot;);&#xa;d.addColumn(&quot;Cantidad&quot;);"/>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>

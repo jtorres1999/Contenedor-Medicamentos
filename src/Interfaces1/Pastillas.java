@@ -46,6 +46,7 @@ public class Pastillas extends javax.swing.JFrame {
         d1.addColumn("Tipo");
         d1.addColumn("Laboratorio");
         d1.addColumn("Estado");
+        d1.addColumn("Cantidad");
         pasti.setModel(d1);
         jScrollPane1.setViewportView(pasti);
 
@@ -122,12 +123,14 @@ public class Pastillas extends javax.swing.JFrame {
         // TODO add your handling code here:
           for (int i = 0; i < pasti.getRowCount(); i++) {
             
-            String Vector[]=new String[4];
+            String Vector[]=new String[5];
             
             Vector[0] = pasti.getValueAt(i, 0).toString();
           Vector[1] = pasti.getValueAt(i, 1).toString();
           Vector[2] = pasti.getValueAt(i, 2).toString();
           Vector[3] = pasti.getValueAt(i, 3).toString();
+          Vector[4] = pasti.getValueAt(i, 4).toString();
+          
           d.addRow(Vector);    //LLAMAMOS AL MODELO DE LA PANTALLA2 Y LE AGREGAMOS EL VECTOR COMO UNA NUEVA FILA
             
         }

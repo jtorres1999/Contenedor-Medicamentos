@@ -8,12 +8,14 @@ public class Medica {
     public String Tipo;
     private String Lab;
     private String Est;
+    private String Cant;
 
-    public Medica(String nomb, String Tipo, String Lab, String Est) {
+    public Medica(String nomb, String Tipo, String Lab, String Est, String Cant) {
         this.nomb = nomb;
         this.Tipo = Tipo;
         this.Lab = Lab;
         this.Est = Est;
+        this.Cant= Cant;
     }
 
     public Medica() {
@@ -82,6 +84,14 @@ public class Medica {
      */
     public void setEst(String Est) {
         this.Est = Est;
+    }
+
+    public String getCant() {
+        return Cant;
+    }
+
+    public void setCant(String Cant) {
+        this.Cant = Cant;
     }
 
   

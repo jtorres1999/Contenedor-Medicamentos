@@ -80,7 +80,7 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jara.addColumn(&quot;Nombre&quot;);&#xa;jara.addColumn(&quot;Tipo&quot;);&#xa;jara.addColumn(&quot;Laboratorio&quot;);&#xa;jara.addColumn(&quot;Estado&quot;);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jara.addColumn(&quot;Nombre&quot;);&#xa;jara.addColumn(&quot;Tipo&quot;);&#xa;jara.addColumn(&quot;Laboratorio&quot;);&#xa;jara.addColumn(&quot;Estado&quot;);&#xa;jara.addColumn(&quot;Cantidad&quot;);"/>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
